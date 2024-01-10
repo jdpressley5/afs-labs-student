@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-development
+  name: app-deployment
   namespace: jpressley
   labels:
     app: app
@@ -22,7 +22,7 @@ spec:
       - envFrom:
         - secretRef:
             name: db-secret
-        name: app-development
+        name: app-deployment
         image: registry.dev.afsmtddso.com/jpressley-harbor-project/app:971c881-d62aa6b
         ports:
         - containerPort: 5000
