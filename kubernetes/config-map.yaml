@@ -4,4 +4,4 @@ metadata:
   name: feature-toggle
   namespace: jpressley
 data:
-  LOCATION_FEATURE_ENABLED: "FALSE"
+  LOCATION_FEATURE_ENABLED: "TRUE"
